@@ -5,7 +5,7 @@ define(['jquery', 'rngModule', 'reelModule', 'uiModule', 'audioModule'], functio
 		reelModule.reelmoduleinitialize();
 		uiModule.uimoduleinitialize();
 		audioModule.audiomoduleinitialize();
-		audioModule.audiomoduleplayaudio('themeSong');
+		// audioModule.audiomoduleplayaudio('themeSong');
 		// audioModule.audiomoduleplayaudio('casinoAmbience');
 	};
 
