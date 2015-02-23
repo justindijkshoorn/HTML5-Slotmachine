@@ -1,0 +1,333 @@
+body {
+	background-color: #151515;
+}
+
+.reel-header {
+	width: 680px;
+	height: 25px;
+	margin: 25px auto 0 auto;
+	padding: 15px 0 15px 0;
+	position: relative;
+	overflow: hidden;
+	background-color: #111;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.reel-wrapper {
+	width: 680px;
+	height: 360px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background-color: #222;
+	border: 1px solid #000;
+
+	.reel-container-fx {
+		width: 680px;
+		height: 360px;
+		position: absolute;
+		overflow: hidden;
+		
+		background: url(../img/reel-container-fx.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		z-index: 100;
+	}
+
+	.reel-container {
+		width: 210px;
+		height: 120px;
+		margin: 120px 0 0 230px;
+		padding: 0px;
+		position: relative;
+
+		-webkit-perspective: 5000px;
+		-moz-perspective: 5000px;
+		-o-perspective: 5000px;
+		perspective: 5000px;
+
+		#reel-1, #reel-2, #reel-3 {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			position: relative;
+
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
+			-webkit-transition: -webkit-transform 0.08s linear;
+			-moz-transition: -moz-transform 0.08s linear;
+			-o-transition: -o-transform 0.08s linear;
+			transition: transform 0.08s linear;
+
+			figure {
+				width: 186px;
+				height: 122px;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				display: block;
+
+				border-top: 0px solid #000;
+				border-right: 16px solid #000;
+				border-bottom: 0px solid #000;
+				border-left: 16px solid #000;
+
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				-o-backface-visibility: hidden;
+				backface-visibility: hidden;
+
+				background-repeat: no-repeat;
+				background-size: auto auto;
+
+				font-family: "Courier New", Courier, monospace;
+				font-size: 12px;
+				color: #aaa;
+				text-align: right;
+			}
+
+			.apple {
+				background: url(../img/icons/apple.png);
+			}
+
+			.bar {
+				background: url(../img/icons/bar.png);
+			}
+
+			.bell {
+				background: url(../img/icons/bell.png);
+			}
+
+			.chance {
+				background: url(../img/icons/chance.png);
+			}
+
+			.cherry {
+				background: url(../img/icons/cherry.png);
+			}
+
+			.clover {
+				background: url(../img/icons/clover.png);
+			}
+
+			.coin {
+				background: url(../img/icons/coin.png);
+			}
+
+			.diamond {
+				background: url(../img/icons/diamond.png);
+			}
+
+			.grapes {
+				background: url(../img/icons/grapes.png);
+			}
+
+			.heart {
+				background: url(../img/icons/heart.png);
+			}
+
+			.horseshoe {
+				background: url(../img/icons/horseshoe.png);
+			}
+
+			.lemon {
+				background: url(../img/icons/lemon.png);
+			}
+
+			.melon {
+				background: url(../img/icons/melon.png);
+			}
+
+			.orange {
+				background: url(../img/icons/orange.png);
+			}
+
+			.plum {
+				background: url(../img/icons/plum.png);
+			}
+
+			.seven {
+				background: url(../img/icons/seven.png);
+			}
+		}
+
+		#reel-1 {
+			margin: 0 0 0 -220px;
+		}
+
+		#reel-2 {
+			margin: -120px 0 0 0;
+		}
+
+		#reel-3 {
+			margin: -120px 0 0 220px;
+		}
+	}
+}
+
+.reel-buttons {
+	width: 680px;
+	height: auto;
+	margin: 0 auto;
+	padding: 15px 0 15px 0;
+	position: relative;
+	overflow: hidden;
+	background-color: #111;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+
+	.button {
+		width: auto;
+		height: auto;
+		margin: 5px;
+		padding: auto;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		cursor: pointer;
+		
+		font-family: "Verdana", Geneva, sans-serif;
+		font-size: 16px;
+
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		div {
+			padding: 10px 20px 12px 20px;
+			color: rgba(0,0,0,0.7);
+			text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+		}
+	}
+
+	.button:active {
+		top: 3px;
+
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -2px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -2px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -2px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+
+		div {
+			padding-bottom: 9px;
+		}
+	}
+
+	.button-spin {
+		margin: 0 15px 0 0;
+		background-color: #ccc;
+		float: right;
+	}
+
+	.button-spin-blink {
+		-webkit-animation: button-spin-blinker 1.25s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		-moz-animation: button-spin-blinker 0.75s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		-o-animation: button-spin-blinker 0.75s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		animation: button-spin-blinker 0.75s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+	}
+
+	@-webkit-keyframes button-spin-blinker {
+		from {
+			background-color: #ccc;
+			-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: orange;
+			-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px orange;
+		}
+	}
+	@-moz-keyframes button-spin-blinker {
+		from {
+			background-color: #ccc;
+			-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: orange;
+			-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px orange;
+		}
+	}
+	@-o-keyframes button-spin-blinker {
+		from {
+			background-color: #ccc;
+		} to {
+			background-color: orange;
+		}
+	}
+	@keyframes button-spin-blinker {
+		from {
+			background-color: #ccc;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: orange;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px orange;
+		}
+	}
+
+	.button-hold {
+		margin: 0 0 0 15px;
+		background-color: #ccc;
+		float: left;
+	}
+
+	.button-hold-blink {
+		-webkit-animation: button-hold-blinker 0.5s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		-moz-animation: button-hold-blinker 0.5s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		-o-animation: button-hold-blinker 0.5s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+		animation: button-hold-blinker 0.5s cubic-bezier(1.0,0,0,1.0) 0 infinite normal;
+	}
+
+	@-webkit-keyframes button-hold-blinker {
+		from {
+			background-color: #ccc;
+			-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: #55aacc;
+			-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px #55aacc;
+		}
+	}
+	@-moz-keyframes button-hold-blinker {
+		from {
+			background-color: #ccc;
+			-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: #55aacc;
+			-moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px #55aacc;
+		}
+	}
+	@-o-keyframes button-hold-blinker {
+		from {
+			background-color: #ccc;
+		} to {
+			background-color: #55aacc;
+		}
+	}
+	@keyframes button-hold-blinker {
+		from {
+			background-color: #ccc;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+		} to {
+			background-color: #55aacc;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px #55aacc;
+		}
+	}
+
+	.button-holding {
+		background-color: #55aacc;
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px #55aacc;
+	}
+
+	.button-hold-disable {
+		background-color: #ff8080;
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px -5px 0px 0px rgba(0,0,0,0.3), inset 0px 2px 0px 0px rgba(255,255,255,0.5), 0 0 6px #ff8080;	
+	}
+}
